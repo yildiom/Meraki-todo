@@ -1,7 +1,16 @@
-@import "./base/reset";
-@import "./base/fonts";
-@import "./base/variables";
-@import "./base/mixins";
+@import url("https://fonts.googleapis.com/css?family=Roboto:500");
+@import url("../fonts/icons/fontello.css");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
 
 .todo-app {
   display: block;
@@ -9,15 +18,17 @@
   padding: 27px 14px 0 14px;
   width: 571px;
 }
+
 .todo-form {
-  background-color: $green;
+  background-color: #19ba99;
   padding: 18px;
   border-radius: 6px;
   position: relative;
 }
+
 .todo-form__input {
   width: 95%;
-  background-color: $light-green;
+  background-color: #65c4ae;
   outline: none;
   border-radius: 6px;
   color: white;
@@ -26,9 +37,11 @@
   padding: 23px 0 23px 23px;
   border: 0;
 }
+
 input::placeholder {
   color: white;
 }
+
 .todo-form__button {
   background-color: #fff;
   border-radius: 50%;
@@ -37,23 +50,29 @@ input::placeholder {
   position: absolute;
   top: 18px;
   right: 15px;
-  &::before {
-    position: absolute;
-    content: "\e802";
-    font-family: "fontello";
-    font-size: 30px;
-    color: $green;
-    right: 23px;
-    top: 15px;
-  }
 }
+
+.todo-form__button::before {
+  position: absolute;
+  content: "\e802";
+  font-family: "fontello";
+  font-size: 30px;
+  color: #19ba99;
+  right: 23px;
+  top: 15px;
+}
+
 body {
   background-color: #eef3f6;
   margin-top: 50px;
 }
+
 a {
   text-decoration: none;
 }
+
 li {
   list-style-type: none;
 }
+
+/*# sourceMappingURL=style.css.map */
