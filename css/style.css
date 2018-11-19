@@ -12,6 +12,20 @@
   display: block;
 }
 
+body {
+  background-color: #eef3f6;
+  margin-top: 50px;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
 .todo-app {
   display: block;
   margin: 0 auto;
@@ -22,19 +36,19 @@
 .todo-form {
   background-color: #19ba99;
   padding: 18px;
-  border-radius: 6px;
+  border-radius: 10px;
   position: relative;
+  margin-bottom: 18px;
 }
 
 .todo-form__input {
   width: 95%;
   background-color: #65c4ae;
   outline: none;
-  border-radius: 6px;
+  border-radius: 10px;
   color: white;
   font-size: 16px;
-  font-family: "Roboto", sans-serif;
-  padding: 23px 0 23px 23px;
+  padding: 23px 50px 23px 23px;
   border: 0;
 }
 
@@ -62,17 +76,42 @@ input::placeholder {
   top: 15px;
 }
 
-body {
-  background-color: #eef3f6;
-  margin-top: 50px;
+.todo-list {
+  width: 95%;
+  margin: 0 auto;
 }
 
-a {
-  text-decoration: none;
+.todo-list__listitem {
+  padding: 25px;
+  background-color: #fff;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
 }
 
-li {
-  list-style-type: none;
+.todo-list__listitem a {
+  width: 60px;
+  height: 40px;
+  background-color: yellow;
+  position: relative;
+}
+
+.remove {
+  border-right: 1px solid #d3d3d3;
+  position: relative;
+}
+
+.remove::before {
+  position: absolute;
+  content: "\e800";
+  font-family: "fontello";
+  font-size: 30px;
+  color: #d3d3d3;
+}
+
+.todo-list__listitem span {
+  margin-right: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
