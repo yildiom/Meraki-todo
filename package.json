@@ -1,0 +1,25 @@
+{
+  "name": "meraki-todo",
+  "version": "1.0.4",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "css-dev": "node-sass -w ./css/style.scss ./css/style.css --source-map true --output-style expanded",
+    "css-prod": "node-sass -w ./css/style.scss ./css/style.css --output-style compressed",
+    "server": "live-server --watch=./*.html,./css/*.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "stylelint": {
+    "extends": "stylelint-config-sass-guidelines",
+    "rules": {
+      "string-quotes": "double",
+      "max-nesting-depth": 4
+    }
+  },
+  "devDependencies": {
+    "stylelint": "^9.6.0",
+    "stylelint-config-sass-guidelines": "^5.2.0"
+  }
+}
