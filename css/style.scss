@@ -91,6 +91,15 @@ input::placeholder {
     color: $gray;
   }
 }
+.ok{
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "\e801";
+    font-family: "fontello";
+    font-size: 30px;
+    color: $green;
+}
 .todo-list__listitem span {
   margin-right: auto;
 }
